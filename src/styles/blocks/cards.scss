@@ -15,10 +15,16 @@
   }
 
   &__img {
-    display: block;
-    width: 160px;
-    height: 134px;
-    margin: 15px auto 45px;
+    width: 168px;
+    height: 149px;
+    margin-bottom: 45px;
+    padding-top: 15px;
+    transition: transform 0.4s;
+
+    &:hover {
+      border: 3px solid #f3f3f3;
+      transform: scale(1.2);
+    }
   }
 
   &__desktop {
@@ -96,6 +102,7 @@
     color: $main-color;
     border-radius: 5px;
     background: $castom-color;
+    transition: 0.4s;
 
     width: 100%;
     height: 40px;
@@ -104,7 +111,11 @@
 
   &_link:hover {
     border: 1px solid $castom-color;
-    color: $castom-color;
-    background: $main-color;
+    transition: color 0.4s, background-color 0.4s;
+
+    &:hover {
+      color: $castom-color;
+      background-color: $main-color;
+    }
   }
 }
